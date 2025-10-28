@@ -7,7 +7,8 @@ const development =
     "password": process.env.DB_PASSWORD,
     "database": process.env.DB_NAME,
     "host": process.env.DB_HOST,
-    "dialect": process.env.DB_DIALECT
+    "dialect": process.env.DB_DIALECT,
+    port : 3309
   }
 
   const test =
@@ -31,4 +32,5 @@ const development =
     "dialect": process.env.DB_DIALECT
   }
 
-  module.export = {development, test, producton}
+  module.exports = { development, test, production };
+
